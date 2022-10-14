@@ -2,10 +2,14 @@ package com.in28minutes.rest.webservices.restfulwebservices.exception;
 
 import java.net.http.HttpHeaders;
 import java.time.LocalDateTime;
+import java.util.HashMap;
+import java.util.Map;
 
+import org.springframework.core.Ordered;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.HttpStatusCode;
 import org.springframework.http.ResponseEntity;
+import org.springframework.lang.Nullable;
 import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
@@ -14,7 +18,7 @@ import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExcep
 
 @ControllerAdvice
 public class CustomizedResponseEntityExceptionHandler
-	extends ResponseEntityExceptionHandler {
+	/*extends ResponseEntityExceptionHandler*/ {
 
     @ExceptionHandler(Exception.class)
     public final ResponseEntity<ErrorDetails> handleAllExceptions(Exception ex,
@@ -37,6 +41,7 @@ public class CustomizedResponseEntityExceptionHandler
     }
 
 //    @Override
+    @ExceptionHandler(MethodArgumentNotValidException.class)
     protected ResponseEntity<Object> handleMethodArgumentNotValid(
 	    MethodArgumentNotValidException ex, HttpHeaders headers,
 	    HttpStatusCode status, WebRequest request) {
@@ -48,5 +53,12 @@ public class CustomizedResponseEntityExceptionHandler
 
 	return new ResponseEntity(errorDetails, HttpStatus.BAD_REQUEST);
     }
+    
+//    @ExceptionHandler(MethodArgumentNotValidException.class)
+//    protected ResponseEntity<Object> handleMethodArgumentNotValid2(MethodArgumentNotValidException ex) {
+//        Map<String, Object> body = new HashMap<>();
+//        body.put("error", ex);
+//        return new ResponseEntity<>(body, HttpStatus.UNPROCESSABLE_ENTITY);
+//    }
 
 }
