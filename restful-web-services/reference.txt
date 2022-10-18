@@ -1,8 +1,12 @@
 https://github.com/in28minutes/spring-microservices-v2/blob/main/02.restful-web-services/01-step-by-step-changes/v2.md#step-08
 
-
-http://localhost:8080/context-path/swagger-ui.html 
-http://localhost:8080/context-path/v3/api-docs
+http://localhost:8080/users/101
+https://github.com/oceanlaurel/Tutorial-JavaSpringBootMicroservices5-in-1/tree/master
+chrome-extension://aejoelaoggembcahagimdiliamlcdmfm/index.html#requests
+https://springdoc.org/
+https://github.com/springdoc/springdoc-openapi/blob/2.x/springdoc-openapi-starter-webmvc-ui/pom.xml
+http://localhost:8080/v3/api-docs
+http://localhost:8080/swagger-ui/index.html#/
 
 http://localhost:8080/swagger-ui.html 
 http://localhost:8080/v3/api-docs
