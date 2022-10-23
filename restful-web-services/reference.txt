@@ -16,3 +16,8 @@ AWS Cloud9:
  git add --all
  git status
  git commit -m "cloud9"
+ 
+sudo update-alternatives --config java
+sudo update-alternatives --config javac
+
+kill -9 $(lsof -t -i:8080)
