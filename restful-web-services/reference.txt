@@ -16,6 +16,7 @@ AWS Cloud9:
  git add --all
  git status
  git commit -m "cloud9"
+ git push
  
 sudo update-alternatives --config java
 sudo update-alternatives --config javac
