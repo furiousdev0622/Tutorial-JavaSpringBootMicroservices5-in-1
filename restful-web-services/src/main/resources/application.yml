@@ -10,8 +10,16 @@ management:
 
 spring:
   datasource:
-    url: jdbc:h2:mem:testdb
+    #url: jdbc:h2:mem:testdb #H2
+    url: jdbc:mysql://localhost:3306/socialmediadatabase #MySQL
+    username: socialmediauser #MySQL
+    password: P@ssw0rd #MySQL
   jpa:
     defer-datasource-initialization: true
     show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect #MySQL
   

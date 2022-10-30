@@ -25,3 +25,18 @@ sudo update-alternatives --config javac
 
 kill -9 $(lsof -t -i:8080)
 
+sudo docker exec -it mysql-test mysql -uroot
+
+GRANT ALL PRIVILEGES ON socialmediadatabase. * TO 'socialmediauser'@'localhost';
+
+CREATE USER 'socialmediauser'@'localhost' IDENTIFIED WITH authentication_plugin BY 'P@ssw0rd';
+
+CREATE USER 'socialmediauser'@'localhost' IDENTIFIED BY 'P@ssw0rd';
+CREATE USER 'socialmediauser'@'172.17.0.1' IDENTIFIED BY 'P@ssw0rd';
+
+GRANT ALL PRIVILEGES ON socialmediadatabase.* TO 'socialmediauser'@'%' WITH GRANT OPTION;
+
+GRANT ALL PRIVILEGES ON socialmediadatabase. * TO 'socialmediauser'@'localhost';
+
+GRANT ALL PRIVILEGES ON socialmediadatabase. * TO 'socialmediauser'@'172.17.0.1';
+GRANT ALL PRIVILEGES ON *.* TO 'root'@'172.17.0.1' WITH GRANT OPTION;
