@@ -27,6 +27,7 @@ kill -9 $(lsof -t -i:8080)
 
 sudo docker exec -it mysql-test mysql -uroot
 
+[[
 GRANT ALL PRIVILEGES ON socialmediadatabase. * TO 'socialmediauser'@'localhost';
 
 CREATE USER 'socialmediauser'@'localhost' IDENTIFIED WITH authentication_plugin BY 'P@ssw0rd';
@@ -40,3 +41,16 @@ GRANT ALL PRIVILEGES ON socialmediadatabase. * TO 'socialmediauser'@'localhost';
 
 GRANT ALL PRIVILEGES ON socialmediadatabase. * TO 'socialmediauser'@'172.17.0.1';
 GRANT ALL PRIVILEGES ON *.* TO 'root'@'172.17.0.1' WITH GRANT OPTION;
+]]
+
+[[
+sudo docker images
+Clone docker images from 1 docker to another docker:
+Example:
+1) Command on machine A: sudo docker save -o /home/lawrence/mysql.tar mysql
+2) Then copy the /home/lawrence/mysql.tar file to another machine with docker
+3) Command on machine B: sudo docker load -i mysql.tar
+]]
+
+
+
