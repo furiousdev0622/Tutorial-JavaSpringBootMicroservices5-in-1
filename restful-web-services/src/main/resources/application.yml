@@ -22,4 +22,8 @@ spring:
     properties:
       hibernate:
         dialect: org.hibernate.dialect.MySQLDialect #MySQL
+  security:
+    user:
+      name: lawrence
+      password: P@ssw0rd
   

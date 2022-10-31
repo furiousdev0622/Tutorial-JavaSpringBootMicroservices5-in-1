@@ -41,6 +41,7 @@ GRANT ALL PRIVILEGES ON socialmediadatabase. * TO 'socialmediauser'@'localhost';
 
 GRANT ALL PRIVILEGES ON socialmediadatabase. * TO 'socialmediauser'@'172.17.0.1';
 GRANT ALL PRIVILEGES ON *.* TO 'root'@'172.17.0.1' WITH GRANT OPTION;
+flush privileges;
 ]]
 
 [[
@@ -50,6 +51,29 @@ Example:
 1) Command on machine A: sudo docker save -o /home/lawrence/mysql.tar mysql
 2) Then copy the /home/lawrence/mysql.tar file to another machine with docker
 3) Command on machine B: sudo docker load -i mysql.tar
+]]
+
+[[
+Spring Security:
+
+Example:
+Header: Authorization Basic bGF3cmVuY2U6UEBzc3cwcmQ=
+
+For example, basic authorization with username "username" and password "password" looks like that:
+Basic bGF3cmVuY2U6UEBzc3cwcmQ=
+
+First, the prefix "Basic" has to be removed and then you have just the username and password Base64-encoded. After decoding it is:
+username:password
+Example: lawrence:P@ssw0rd
+
+Filter Chains:
+1) All requests should be authenticated
+2) If a request is not authenticated, a web page is shown.
+3) CSRF -> POST, PUT
+
+Configuration
+
+Bean FilterChain
 ]]
 
 
