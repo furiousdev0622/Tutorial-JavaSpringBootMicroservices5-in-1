@@ -1,3 +1,15 @@
 spring:
+  application:
+    name: limits-service
   config:
     import: optional:configserver:http://localhost:8888
+# "spring.cloud.config.profile" will override "spring.profiles.active""
+  profiles:
+    active: dev
+  cloud:
+    config:
+      profile: qa
+    
+limits-service:
+  minimum: 3
+  maximum: 997
