@@ -21,17 +21,22 @@ public class CurrencyConversionController {
 	uriVariables.put("from", from);
 	uriVariables.put("to", to);
 
-	ResponseEntity<CurrencyConversion> responseEntity = new RestTemplate()
+//	ResponseEntity<CurrencyConversion> responseEntity = new RestTemplate()
+//		.getForEntity(
+//			"http://localhost:8000/currency-exchange/from/{from}/to/{to}",
+//			CurrencyConversion.class, uriVariables);
+
+	ResponseEntity<CurrencyExchange> responseEntity = new RestTemplate()
 		.getForEntity(
 			"http://localhost:8000/currency-exchange/from/{from}/to/{to}",
-			CurrencyConversion.class, uriVariables);
+			CurrencyExchange.class, uriVariables);
 
-	CurrencyConversion currencyConversion = responseEntity.getBody();
+	CurrencyExchange currencyExchange = responseEntity.getBody();
 
-	return new CurrencyConversion(currencyConversion.getId(), from, to,
-		quantity, currencyConversion.getConversationMultiple(),
-		quantity.multiply(currencyConversion.getConversationMultiple()),
-		currencyConversion.getEnvironment());
+	return new CurrencyConversion(currencyExchange.getId(), from, to,
+		quantity, currencyExchange.getConversionMultiple(),
+		quantity.multiply(currencyExchange.getConversionMultiple()),
+		currencyExchange.getEnvironment());
     }
 
 }
