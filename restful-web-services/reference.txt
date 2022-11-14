@@ -26,6 +26,7 @@ sudo update-alternatives --config javac
 kill -9 $(lsof -t -i:8080)
 
 sudo docker exec -it mysql-test mysql -uroot
+sudo docker run -it mysql mysql -uroot -p
 
 [[
 GRANT ALL PRIVILEGES ON socialmediadatabase. * TO 'socialmediauser'@'localhost';
