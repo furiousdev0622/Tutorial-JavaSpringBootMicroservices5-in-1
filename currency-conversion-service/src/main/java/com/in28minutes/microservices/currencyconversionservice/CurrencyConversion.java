@@ -8,7 +8,7 @@ public class CurrencyConversion {
     private String from;
     private String to;
     private BigDecimal quantity;
-    private BigDecimal conversationMultiple;
+    private BigDecimal conversionMultiple;
     private BigDecimal totalCalculateAmount;
     private String environment;
 
@@ -16,13 +16,13 @@ public class CurrencyConversion {
     }
 
     public CurrencyConversion(Long id, String from, String to,
-	    BigDecimal quantity, BigDecimal conversationMultiple,
+	    BigDecimal quantity, BigDecimal conversionMultiple,
 	    BigDecimal totalCalculateAmount, String environment) {
 	super();
 	this.id = id;
 	this.from = from;
 	this.to = to;
-	this.conversationMultiple = conversationMultiple;
+	this.conversionMultiple = conversionMultiple;
 	this.quantity = quantity;
 	this.totalCalculateAmount = totalCalculateAmount;
 	this.environment = environment;
@@ -52,14 +52,6 @@ public class CurrencyConversion {
 	this.to = to;
     }
 
-    public BigDecimal getConversationMultiple() {
-	return conversationMultiple;
-    }
-
-    public void setConversationMultiple(BigDecimal conversationMultiple) {
-	this.conversationMultiple = conversationMultiple;
-    }
-
     public BigDecimal getQuantity() {
 	return quantity;
     }
@@ -87,9 +79,17 @@ public class CurrencyConversion {
     @Override
     public String toString() {
 	return "CurrencyConversion [id=" + id + ", from=" + from + ", to=" + to
-		+ ", conversationMultiple=" + conversationMultiple
-		+ ", quantity=" + quantity + ", totalCalculateAmount="
-		+ totalCalculateAmount + ", environment=" + environment + "]";
+		+ ", conversationMultiple=" + conversionMultiple + ", quantity="
+		+ quantity + ", totalCalculateAmount=" + totalCalculateAmount
+		+ ", environment=" + environment + "]";
+    }
+
+    public BigDecimal getConversionMultiple() {
+	return conversionMultiple;
+    }
+
+    public void setConversionMultiple(BigDecimal conversionMultiple) {
+	this.conversionMultiple = conversionMultiple;
     }
 
 }

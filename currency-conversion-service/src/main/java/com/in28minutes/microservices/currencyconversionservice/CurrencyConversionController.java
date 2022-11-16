@@ -38,6 +38,29 @@ public class CurrencyConversionController {
 		currencyExchange.getEnvironment() + " rest template");
     }
 
+    @GetMapping("/currency-conversion-02/from/{from}/to/{to}/quantity/{quantity}")
+    public CurrencyConversion calculateCurrencyConversionNotUseCurrencyExchangeEntity(
+	    @PathVariable String from, @PathVariable String to,
+	    @PathVariable BigDecimal quantity) {
+
+	HashMap<String, String> uriVariables = new HashMap<>();
+	uriVariables.put("from", from);
+	uriVariables.put("to", to);
+
+	ResponseEntity<CurrencyConversion> responseEntity = new RestTemplate()
+		.getForEntity(
+			"http://localhost:8000/currency-exchange/from/{from}/to/{to}",
+			CurrencyConversion.class, uriVariables);
+
+	CurrencyConversion currencyConversion = responseEntity.getBody();
+
+	return new CurrencyConversion(currencyConversion.getId(), from, to,
+		quantity, currencyConversion.getConversionMultiple(),
+		quantity.multiply(currencyConversion.getConversionMultiple()),
+		currencyConversion.getEnvironment()
+			+ " rest template (use CurrencyConversion Entity to receive CurrencyExchange return)");
+    }
+
     @GetMapping("/currency-conversion-feign/from/{from}/to/{to}/quantity/{quantity}")
     public CurrencyConversion calculateCurrencyConversionFeign(
 	    @PathVariable String from, @PathVariable String to,
@@ -50,6 +73,21 @@ public class CurrencyConversionController {
 		quantity, currencyExchange.getConversionMultiple(),
 		quantity.multiply(currencyExchange.getConversionMultiple()),
 		currencyExchange.getEnvironment() + " feign");
+    }
+
+    @GetMapping("/currency-conversion-feign-02/from/{from}/to/{to}/quantity/{quantity}")
+    public CurrencyConversion calculateCurrencyConversionFeignNotUseCurrencyExchangeEntity(
+	    @PathVariable String from, @PathVariable String to,
+	    @PathVariable BigDecimal quantity) {
+
+	CurrencyConversion currencyConversion = proxy
+		.retrieveExchangeValue02(from, to);
+
+	return new CurrencyConversion(currencyConversion.getId(), from, to,
+		quantity, currencyConversion.getConversionMultiple(),
+		quantity.multiply(currencyConversion.getConversionMultiple()),
+		currencyConversion.getEnvironment()
+			+ " feign (use CurrencyConversion Entity to receive CurrencyExchange return)");
     }
 
 }
