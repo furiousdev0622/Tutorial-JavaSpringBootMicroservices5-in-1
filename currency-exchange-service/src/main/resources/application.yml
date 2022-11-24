@@ -26,3 +26,11 @@ management:
     web:
       exposure:
         include: "*"
+
+resilience4j:
+  retry:
+    instances:
+      sample-api:
+        maxRetryAttempts: 5
+        
+      
