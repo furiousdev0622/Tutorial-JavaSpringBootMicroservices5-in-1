@@ -2,10 +2,12 @@
 watch -n 0.1 curl "http://google.com"
 
 2)
+Reference only:
 2.1)
 If you are using Docker-for-mac or Docker-for-Windows 18.03+, just connect to your mysql service using the host host.docker.internal (instead of the 127.0.0.1 in your connection string).
 2.2)
 If you are using Docker-for-Linux 20.10.0+, you can also use the host host.docker.internal if you started your Docker container with the --add-host host.docker.internal:host-gateway option.
-2.3)
+2.3) - seem not work
 sudo docker run --add-host host.docker.internal:host-gateway in28min/todo-rest-api-h2:1.0.0.RELEASE
-
+2.4) - tested workable
+sudo docker run --network="host" in28min/todo-rest-api-h2:1.0.0.RELEASE
