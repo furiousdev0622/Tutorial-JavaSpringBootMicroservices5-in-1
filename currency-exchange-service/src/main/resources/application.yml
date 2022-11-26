@@ -31,8 +31,19 @@ resilience4j:
   retry:
     instances:
       sample-api:
-        maxRetryAttempts: 5
+        #maxRetryAttempts: 5
+        maxAttempts: 5
         waitDuration: 1s
         enableExponentialBackoff: true
-        
+  ratelimiter:
+    instances:
+      default:
+        limitForPeriod: 2
+        limitRefreshPEriod: 1s
+  bulkhead:
+    instamces:
+      default:
+        maxConcurrentCslls: 10
+      sample-api:
+        maxConcurrentCslls: 10
       
