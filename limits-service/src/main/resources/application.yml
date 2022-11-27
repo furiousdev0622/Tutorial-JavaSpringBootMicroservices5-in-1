@@ -10,6 +10,21 @@ spring:
     config:
       profile: qa
     
+server:
+  port: 7800   
+    
 limits-service:
   minimum: 3
   maximum: 997
+  
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka
+      
+# Actuator:      
+management: 
+  endpoints:
+    web:
+      exposure:
+        include: "*"
