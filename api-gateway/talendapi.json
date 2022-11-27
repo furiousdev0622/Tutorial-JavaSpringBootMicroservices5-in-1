@@ -1,0 +1,1471 @@
+{
+  "version": 6,
+  "entities": [
+    {
+      "entity": {
+        "type": "Project",
+        "id": "cb69852a-4873-424f-b178-ea109cd2f3dd",
+        "name": "Master Microservices with Spring Boot and Spring Cloud"
+      },
+      "children": [
+        {
+          "entity": {
+            "type": "Request",
+            "method": {
+              "link": "http://tools.ietf.org/html/rfc7231#section-4.3.1",
+              "name": "GET"
+            },
+            "body": {
+              "formBody": {
+                "overrideContentType": true,
+                "encoding": "application/x-www-form-urlencoded",
+                "items": []
+              },
+              "bodyType": "Text",
+              "textBodyEditorHeight": 150,
+              "textBody": "{\n\"name\": \"AAA\",\n\"birthDate\": \"1992-10-08\"\n}"
+            },
+            "uri": {
+              "query": {
+                "delimiter": "&",
+                "items": []
+              },
+              "scheme": {
+                "name": "http",
+                "version": "V11"
+              },
+              "host": "localhost:8765",
+              "path": "/actuator"
+            },
+            "id": "e014f91f-afe3-4a56-b557-d76cbbf6bb18",
+            "name": "Actuator - ApiGatewayApplication8765",
+            "headers": [
+              {
+                "name": "Accept",
+                "value": "application/atom+xml"
+              },
+              {
+                "name": "X-API-Version",
+                "value": ""
+              },
+              {
+                "name": "Authorization",
+                "value": "Basic bGF3cmVuY2U6UEBzc3cwcmQ="
+              }
+            ]
+          }
+        },
+        {
+          "entity": {
+            "type": "Request",
+            "method": {
+              "link": "http://tools.ietf.org/html/rfc7231#section-4.3.1",
+              "name": "GET"
+            },
+            "body": {
+              "formBody": {
+                "overrideContentType": true,
+                "encoding": "application/x-www-form-urlencoded",
+                "items": []
+              },
+              "bodyType": "Text",
+              "textBodyEditorHeight": 150,
+              "textBody": "{\n\"name\": \"AAA\",\n\"birthDate\": \"1992-10-08\"\n}"
+            },
+            "uri": {
+              "query": {
+                "delimiter": "&",
+                "items": []
+              },
+              "scheme": {
+                "name": "http",
+                "version": "V11"
+              },
+              "host": "localhost:8100",
+              "path": "/actuator"
+            },
+            "id": "6065c038-560d-457d-bac8-0be264147eec",
+            "name": "Actuator - CurrencyConversionServiceApplication8100",
+            "headers": [
+              {
+                "name": "Accept",
+                "value": "application/atom+xml"
+              },
+              {
+                "name": "X-API-Version",
+                "value": ""
+              },
+              {
+                "name": "Authorization",
+                "value": "Basic bGF3cmVuY2U6UEBzc3cwcmQ="
+              }
+            ]
+          }
+        },
+        {
+          "entity": {
+            "type": "Request",
+            "method": {
+              "link": "http://tools.ietf.org/html/rfc7231#section-4.3.1",
+              "name": "GET"
+            },
+            "body": {
+              "formBody": {
+                "overrideContentType": true,
+                "encoding": "application/x-www-form-urlencoded",
+                "items": []
+              },
+              "bodyType": "Text",
+              "textBodyEditorHeight": 150,
+              "textBody": "{\n\"name\": \"AAA\",\n\"birthDate\": \"1992-10-08\"\n}"
+            },
+            "uri": {
+              "query": {
+                "delimiter": "&",
+                "items": []
+              },
+              "scheme": {
+                "name": "http",
+                "version": "V11"
+              },
+              "host": "localhost:8101",
+              "path": "/actuator"
+            },
+            "id": "8b66a9df-ed9a-4b1e-a94a-151eb86e78bf",
+            "name": "Actuator - CurrencyConversionServiceApplication8101",
+            "headers": [
+              {
+                "name": "Accept",
+                "value": "application/atom+xml"
+              },
+              {
+                "name": "X-API-Version",
+                "value": ""
+              },
+              {
+                "name": "Authorization",
+                "value": "Basic bGF3cmVuY2U6UEBzc3cwcmQ="
+              }
+            ]
+          }
+        },
+        {
+          "entity": {
+            "type": "Request",
+            "method": {
+              "link": "http://tools.ietf.org/html/rfc7231#section-4.3.1",
+              "name": "GET"
+            },
+            "body": {
+              "formBody": {
+                "overrideContentType": true,
+                "encoding": "application/x-www-form-urlencoded",
+                "items": []
+              },
+              "bodyType": "Text",
+              "textBodyEditorHeight": 150,
+              "textBody": "{\n\"name\": \"AAA\",\n\"birthDate\": \"1992-10-08\"\n}"
+            },
+            "uri": {
+              "query": {
+                "delimiter": "&",
+                "items": []
+              },
+              "scheme": {
+                "name": "http",
+                "version": "V11"
+              },
+              "host": "localhost:8000",
+              "path": "/actuator"
+            },
+            "id": "88e45c88-5311-4a0f-931d-6ffb2697a68f",
+            "name": "Actuator - CurrencyExchangeServiceApplication8000",
+            "headers": [
+              {
+                "name": "Accept",
+                "value": "application/atom+xml"
+              },
+              {
+                "name": "X-API-Version",
+                "value": ""
+              },
+              {
+                "name": "Authorization",
+                "value": "Basic bGF3cmVuY2U6UEBzc3cwcmQ="
+              }
+            ]
+          }
+        },
+        {
+          "entity": {
+            "type": "Request",
+            "method": {
+              "link": "http://tools.ietf.org/html/rfc7231#section-4.3.1",
+              "name": "GET"
+            },
+            "body": {
+              "formBody": {
+                "overrideContentType": true,
+                "encoding": "application/x-www-form-urlencoded",
+                "items": []
+              },
+              "bodyType": "Text",
+              "textBodyEditorHeight": 150,
+              "textBody": "{\n\"name\": \"AAA\",\n\"birthDate\": \"1992-10-08\"\n}"
+            },
+            "uri": {
+              "query": {
+                "delimiter": "&",
+                "items": []
+              },
+              "scheme": {
+                "name": "http",
+                "version": "V11"
+              },
+              "host": "localhost:8001",
+              "path": "/actuator"
+            },
+            "id": "d45e6edd-d884-4d06-aabe-07bcf46ccfcb",
+            "name": "Actuator - CurrencyExchangeServiceApplication8001",
+            "headers": [
+              {
+                "name": "Accept",
+                "value": "application/atom+xml"
+              },
+              {
+                "name": "X-API-Version",
+                "value": ""
+              },
+              {
+                "name": "Authorization",
+                "value": "Basic bGF3cmVuY2U6UEBzc3cwcmQ="
+              }
+            ]
+          }
+        },
+        {
+          "entity": {
+            "type": "Request",
+            "method": {
+              "link": "http://tools.ietf.org/html/rfc7231#section-4.3.1",
+              "name": "GET"
+            },
+            "body": {
+              "formBody": {
+                "overrideContentType": true,
+                "encoding": "application/x-www-form-urlencoded",
+                "items": []
+              },
+              "bodyType": "Text",
+              "textBodyEditorHeight": 150,
+              "textBody": "{\n\"name\": \"AAA\",\n\"birthDate\": \"1992-10-08\"\n}"
+            },
+            "uri": {
+              "query": {
+                "delimiter": "&",
+                "items": []
+              },
+              "scheme": {
+                "name": "http",
+                "version": "V11"
+              },
+              "host": "localhost:8888",
+              "path": "/actuator"
+            },
+            "id": "625e9b07-7409-4193-b703-32829c8292db",
+            "name": "Actuator - SpringCloudConfigServerApplication8888",
+            "headers": [
+              {
+                "name": "Accept",
+                "value": "application/atom+xml"
+              },
+              {
+                "name": "X-API-Version",
+                "value": ""
+              },
+              {
+                "name": "Authorization",
+                "value": "Basic bGF3cmVuY2U6UEBzc3cwcmQ="
+              }
+            ]
+          }
+        },
+        {
+          "entity": {
+            "type": "Request",
+            "method": {
+              "link": "http://tools.ietf.org/html/rfc7231#section-4.3.1",
+              "name": "GET"
+            },
+            "body": {
+              "formBody": {
+                "overrideContentType": true,
+                "encoding": "application/x-www-form-urlencoded",
+                "items": []
+              },
+              "bodyType": "Text",
+              "textBodyEditorHeight": 150,
+              "textBody": "{\n\"name\": \"AAA\",\n\"birthDate\": \"1992-10-08\"\n}"
+            },
+            "uri": {
+              "query": {
+                "delimiter": "&",
+                "items": []
+              },
+              "scheme": {
+                "name": "http",
+                "version": "V11"
+              },
+              "host": "localhost:8761",
+              "path": ""
+            },
+            "id": "91fab6f4-594f-4a7f-8c2f-384bc5d291a3",
+            "name": "Eureka Server",
+            "headers": [
+              {
+                "name": "Accept",
+                "value": "application/atom+xml"
+              },
+              {
+                "name": "X-API-Version",
+                "value": ""
+              },
+              {
+                "name": "Authorization",
+                "value": "Basic bGF3cmVuY2U6UEBzc3cwcmQ="
+              }
+            ]
+          }
+        },
+        {
+          "entity": {
+            "type": "Request",
+            "method": {
+              "link": "http://tools.ietf.org/html/rfc7231#section-4.3.1",
+              "name": "GET"
+            },
+            "body": {
+              "formBody": {
+                "overrideContentType": true,
+                "encoding": "application/x-www-form-urlencoded",
+                "items": []
+              },
+              "bodyType": "Text",
+              "textBodyEditorHeight": 150,
+              "textBody": "{\n\"name\": \"AAA\",\n\"birthDate\": \"1992-10-08\"\n}"
+            },
+            "uri": {
+              "query": {
+                "delimiter": "&",
+                "items": []
+              },
+              "scheme": {
+                "name": "http",
+                "version": "V11"
+              },
+              "host": "localhost:8000",
+              "path": "/h2-console/"
+            },
+            "id": "cff31788-9f09-4488-a640-dfcd9b87ba12",
+            "name": "H2 IMDB - CurrencyExchangeServiceApplication8000",
+            "headers": [
+              {
+                "name": "Accept",
+                "value": "application/atom+xml"
+              },
+              {
+                "name": "X-API-Version",
+                "value": ""
+              },
+              {
+                "name": "Authorization",
+                "value": "Basic bGF3cmVuY2U6UEBzc3cwcmQ="
+              }
+            ]
+          }
+        },
+        {
+          "entity": {
+            "type": "Request",
+            "method": {
+              "link": "http://tools.ietf.org/html/rfc7231#section-4.3.1",
+              "name": "GET"
+            },
+            "body": {
+              "formBody": {
+                "overrideContentType": true,
+                "encoding": "application/x-www-form-urlencoded",
+                "items": []
+              },
+              "bodyType": "Text",
+              "textBodyEditorHeight": 150,
+              "textBody": "{\n\"name\": \"AAA\",\n\"birthDate\": \"1992-10-08\"\n}"
+            },
+            "uri": {
+              "query": {
+                "delimiter": "&",
+                "items": []
+              },
+              "scheme": {
+                "name": "http",
+                "version": "V11"
+              },
+              "host": "localhost:8001",
+              "path": "/h2-console/"
+            },
+            "id": "d3f1deee-6cc6-441a-9346-8967fb5fcc85",
+            "name": "H2 IMDB - CurrencyExchangeServiceApplication8001",
+            "headers": [
+              {
+                "name": "Accept",
+                "value": "application/atom+xml"
+              },
+              {
+                "name": "X-API-Version",
+                "value": ""
+              },
+              {
+                "name": "Authorization",
+                "value": "Basic bGF3cmVuY2U6UEBzc3cwcmQ="
+              }
+            ]
+          }
+        },
+        {
+          "entity": {
+            "type": "Request",
+            "method": {
+              "link": "http://tools.ietf.org/html/rfc7231#section-4.3.1",
+              "name": "GET"
+            },
+            "body": {
+              "formBody": {
+                "overrideContentType": true,
+                "encoding": "application/x-www-form-urlencoded",
+                "items": []
+              },
+              "bodyType": "Text",
+              "textBodyEditorHeight": 150,
+              "textBody": "{\n\"name\": \"AAA\",\n\"birthDate\": \"1992-10-08\"\n}"
+            },
+            "uri": {
+              "query": {
+                "delimiter": "&",
+                "items": []
+              },
+              "scheme": {
+                "name": "http",
+                "version": "V11"
+              },
+              "host": "localhost:8765",
+              "path": "/get"
+            },
+            "id": "d2568a86-fd26-4d50-a9c9-0775f5fbd1a5",
+            "name": "api-gateway - get",
+            "headers": [
+              {
+                "name": "Accept",
+                "value": "application/atom+xml"
+              },
+              {
+                "name": "X-API-Version",
+                "value": ""
+              },
+              {
+                "name": "Authorization",
+                "value": "Basic bGF3cmVuY2U6UEBzc3cwcmQ="
+              }
+            ]
+          }
+        },
+        {
+          "entity": {
+            "type": "Request",
+            "method": {
+              "link": "http://tools.ietf.org/html/rfc7231#section-4.3.1",
+              "name": "GET"
+            },
+            "body": {
+              "formBody": {
+                "overrideContentType": true,
+                "encoding": "application/x-www-form-urlencoded",
+                "items": []
+              },
+              "bodyType": "Text",
+              "textBodyEditorHeight": 150,
+              "textBody": "{\n\"name\": \"AAA\",\n\"birthDate\": \"1992-10-08\"\n}"
+            },
+            "uri": {
+              "query": {
+                "delimiter": "&",
+                "items": []
+              },
+              "scheme": {
+                "name": "http",
+                "version": "V11"
+              },
+              "host": "localhost:5000",
+              "path": "/hello-world"
+            },
+            "id": "195ed6db-2a46-41cc-af4f-e5e47cfef996",
+            "name": "call api within docker - hello-world",
+            "headers": [
+              {
+                "name": "Accept",
+                "value": "application/atom+xml"
+              },
+              {
+                "name": "X-API-Version",
+                "value": ""
+              },
+              {
+                "name": "Authorization",
+                "value": "Basic bGF3cmVuY2U6UEBzc3cwcmQ="
+              }
+            ]
+          }
+        },
+        {
+          "entity": {
+            "type": "Request",
+            "method": {
+              "link": "http://tools.ietf.org/html/rfc7231#section-4.3.1",
+              "name": "GET"
+            },
+            "body": {
+              "formBody": {
+                "overrideContentType": true,
+                "encoding": "application/x-www-form-urlencoded",
+                "items": []
+              },
+              "bodyType": "Text",
+              "textBodyEditorHeight": 150,
+              "textBody": "{\n\"name\": \"AAA\",\n\"birthDate\": \"1992-10-08\"\n}"
+            },
+            "uri": {
+              "query": {
+                "delimiter": "&",
+                "items": []
+              },
+              "scheme": {
+                "name": "http",
+                "version": "V11"
+              },
+              "host": "localhost:5000",
+              "path": "/hello-world-bean"
+            },
+            "id": "83d8fbd1-eac1-4080-bc85-b757937192db",
+            "name": "call api within docker - hello-world-bean",
+            "headers": [
+              {
+                "name": "Accept",
+                "value": "application/atom+xml"
+              },
+              {
+                "name": "X-API-Version",
+                "value": ""
+              },
+              {
+                "name": "Authorization",
+                "value": "Basic bGF3cmVuY2U6UEBzc3cwcmQ="
+              }
+            ]
+          }
+        },
+        {
+          "entity": {
+            "type": "Request",
+            "method": {
+              "link": "http://tools.ietf.org/html/rfc7231#section-4.3.1",
+              "name": "GET"
+            },
+            "body": {
+              "formBody": {
+                "overrideContentType": true,
+                "encoding": "application/x-www-form-urlencoded",
+                "items": []
+              },
+              "bodyType": "Text",
+              "textBodyEditorHeight": 150,
+              "textBody": "{\n\"name\": \"AAA\",\n\"birthDate\": \"1992-10-08\"\n}"
+            },
+            "uri": {
+              "query": {
+                "delimiter": "&",
+                "items": []
+              },
+              "scheme": {
+                "name": "http",
+                "version": "V11"
+              },
+              "host": "localhost:8765",
+              "path": "/currency-conversion-new/from/USD/to/INR/quantity/10"
+            },
+            "id": "18989f69-ac0d-4535-b2dd-345ca43be0a0",
+            "name": "currency-conversion (feign) (new) - USD to INR, quantity=10 (through api-gateway ApiGatewayConfiguration)",
+            "headers": [
+              {
+                "name": "Accept",
+                "value": "application/atom+xml"
+              },
+              {
+                "name": "X-API-Version",
+                "value": ""
+              },
+              {
+                "name": "Authorization",
+                "value": "Basic bGF3cmVuY2U6UEBzc3cwcmQ="
+              }
+            ]
+          }
+        },
+        {
+          "entity": {
+            "type": "Request",
+            "method": {
+              "link": "http://tools.ietf.org/html/rfc7231#section-4.3.1",
+              "name": "GET"
+            },
+            "body": {
+              "formBody": {
+                "overrideContentType": true,
+                "encoding": "application/x-www-form-urlencoded",
+                "items": []
+              },
+              "bodyType": "Text",
+              "textBodyEditorHeight": 150,
+              "textBody": "{\n\"name\": \"AAA\",\n\"birthDate\": \"1992-10-08\"\n}"
+            },
+            "uri": {
+              "query": {
+                "delimiter": "&",
+                "items": []
+              },
+              "scheme": {
+                "name": "http",
+                "version": "V11"
+              },
+              "host": "localhost:8100",
+              "path": "/currency-conversion-feign/from/USD/to/INR/quantity/10"
+            },
+            "id": "b3d12445-45c3-4753-99c0-c56f120da894",
+            "name": "currency-conversion (feign) - USD to INR, quantity=10",
+            "headers": [
+              {
+                "name": "Accept",
+                "value": "application/atom+xml"
+              },
+              {
+                "name": "X-API-Version",
+                "value": ""
+              },
+              {
+                "name": "Authorization",
+                "value": "Basic bGF3cmVuY2U6UEBzc3cwcmQ="
+              }
+            ]
+          }
+        },
+        {
+          "entity": {
+            "type": "Request",
+            "method": {
+              "link": "http://tools.ietf.org/html/rfc7231#section-4.3.1",
+              "name": "GET"
+            },
+            "body": {
+              "formBody": {
+                "overrideContentType": true,
+                "encoding": "application/x-www-form-urlencoded",
+                "items": []
+              },
+              "bodyType": "Text",
+              "textBodyEditorHeight": 150,
+              "textBody": "{\n\"name\": \"AAA\",\n\"birthDate\": \"1992-10-08\"\n}"
+            },
+            "uri": {
+              "query": {
+                "delimiter": "&",
+                "items": []
+              },
+              "scheme": {
+                "name": "http",
+                "version": "V11"
+              },
+              "host": "localhost:8765",
+              "path": "/currency-conversion-feign/from/USD/to/INR/quantity/10"
+            },
+            "id": "a856b209-214b-4ab9-bb35-a6f0f61e6cf0",
+            "name": "currency-conversion (feign) - USD to INR, quantity=10 (through api-gateway ApiGatewayConfiguration)",
+            "headers": [
+              {
+                "name": "Accept",
+                "value": "application/atom+xml"
+              },
+              {
+                "name": "X-API-Version",
+                "value": ""
+              },
+              {
+                "name": "Authorization",
+                "value": "Basic bGF3cmVuY2U6UEBzc3cwcmQ="
+              }
+            ]
+          }
+        },
+        {
+          "entity": {
+            "type": "Request",
+            "method": {
+              "link": "http://tools.ietf.org/html/rfc7231#section-4.3.1",
+              "name": "GET"
+            },
+            "body": {
+              "formBody": {
+                "overrideContentType": true,
+                "encoding": "application/x-www-form-urlencoded",
+                "items": []
+              },
+              "bodyType": "Text",
+              "textBodyEditorHeight": 150,
+              "textBody": "{\n\"name\": \"AAA\",\n\"birthDate\": \"1992-10-08\"\n}"
+            },
+            "uri": {
+              "query": {
+                "delimiter": "&",
+                "items": []
+              },
+              "scheme": {
+                "name": "http",
+                "version": "V11"
+              },
+              "host": "localhost:8765",
+              "path": "/currency-conversion/currency-conversion-feign/from/USD/to/INR/quantity/10"
+            },
+            "id": "9c345b7f-9058-4378-b79f-b62686dacd70",
+            "name": "currency-conversion (feign) - USD to INR, quantity=10 (through api-gateway)",
+            "headers": [
+              {
+                "name": "Accept",
+                "value": "application/atom+xml"
+              },
+              {
+                "name": "X-API-Version",
+                "value": ""
+              },
+              {
+                "name": "Authorization",
+                "value": "Basic bGF3cmVuY2U6UEBzc3cwcmQ="
+              }
+            ]
+          }
+        },
+        {
+          "entity": {
+            "type": "Request",
+            "method": {
+              "link": "http://tools.ietf.org/html/rfc7231#section-4.3.1",
+              "name": "GET"
+            },
+            "body": {
+              "formBody": {
+                "overrideContentType": true,
+                "encoding": "application/x-www-form-urlencoded",
+                "items": []
+              },
+              "bodyType": "Text",
+              "textBodyEditorHeight": 150,
+              "textBody": "{\n\"name\": \"AAA\",\n\"birthDate\": \"1992-10-08\"\n}"
+            },
+            "uri": {
+              "query": {
+                "delimiter": "&",
+                "items": []
+              },
+              "scheme": {
+                "name": "http",
+                "version": "V11"
+              },
+              "host": "localhost:8100",
+              "path": "/currency-conversion-feign-02/from/USD/to/INR/quantity/10"
+            },
+            "id": "ea3dc0ea-5708-418b-a6ec-080331cd367c",
+            "name": "currency-conversion (feign) - USD to INR, quantity=10 (use CurrencyConversion Entity to receive CurrencyExchange return)",
+            "headers": [
+              {
+                "name": "Accept",
+                "value": "application/atom+xml"
+              },
+              {
+                "name": "X-API-Version",
+                "value": ""
+              },
+              {
+                "name": "Authorization",
+                "value": "Basic bGF3cmVuY2U6UEBzc3cwcmQ="
+              }
+            ]
+          }
+        },
+        {
+          "entity": {
+            "type": "Request",
+            "method": {
+              "link": "http://tools.ietf.org/html/rfc7231#section-4.3.1",
+              "name": "GET"
+            },
+            "body": {
+              "formBody": {
+                "overrideContentType": true,
+                "encoding": "application/x-www-form-urlencoded",
+                "items": []
+              },
+              "bodyType": "Text",
+              "textBodyEditorHeight": 150,
+              "textBody": "{\n\"name\": \"AAA\",\n\"birthDate\": \"1992-10-08\"\n}"
+            },
+            "uri": {
+              "query": {
+                "delimiter": "&",
+                "items": []
+              },
+              "scheme": {
+                "name": "http",
+                "version": "V11"
+              },
+              "host": "localhost:8765",
+              "path": "/currency-conversion/currency-conversion-feign-02/from/USD/to/INR/quantity/10"
+            },
+            "id": "c409a9ce-ecf5-49a7-a2e5-3ac45ccd671b",
+            "name": "currency-conversion (feign) - USD to INR, quantity=10 (use CurrencyConversion Entity to receive CurrencyExchange return) (through api-gateway)",
+            "headers": [
+              {
+                "name": "Accept",
+                "value": "application/atom+xml"
+              },
+              {
+                "name": "X-API-Version",
+                "value": ""
+              },
+              {
+                "name": "Authorization",
+                "value": "Basic bGF3cmVuY2U6UEBzc3cwcmQ="
+              }
+            ]
+          }
+        },
+        {
+          "entity": {
+            "type": "Request",
+            "method": {
+              "link": "http://tools.ietf.org/html/rfc7231#section-4.3.1",
+              "name": "GET"
+            },
+            "body": {
+              "formBody": {
+                "overrideContentType": true,
+                "encoding": "application/x-www-form-urlencoded",
+                "items": []
+              },
+              "bodyType": "Text",
+              "textBodyEditorHeight": 150,
+              "textBody": "{\n\"name\": \"AAA\",\n\"birthDate\": \"1992-10-08\"\n}"
+            },
+            "uri": {
+              "query": {
+                "delimiter": "&",
+                "items": []
+              },
+              "scheme": {
+                "name": "http",
+                "version": "V11"
+              },
+              "host": "localhost:8100",
+              "path": ""
+            },
+            "id": "580bb000-d38d-475c-b5be-086a96fd67ea",
+            "name": "currency-conversion - HAL Explorer - 8100",
+            "headers": [
+              {
+                "name": "Accept",
+                "value": "application/atom+xml"
+              },
+              {
+                "name": "X-API-Version",
+                "value": ""
+              },
+              {
+                "name": "Authorization",
+                "value": "Basic bGF3cmVuY2U6UEBzc3cwcmQ="
+              }
+            ]
+          }
+        },
+        {
+          "entity": {
+            "type": "Request",
+            "method": {
+              "link": "http://tools.ietf.org/html/rfc7231#section-4.3.1",
+              "name": "GET"
+            },
+            "body": {
+              "formBody": {
+                "overrideContentType": true,
+                "encoding": "application/x-www-form-urlencoded",
+                "items": []
+              },
+              "bodyType": "Text",
+              "textBodyEditorHeight": 150,
+              "textBody": "{\n\"name\": \"AAA\",\n\"birthDate\": \"1992-10-08\"\n}"
+            },
+            "uri": {
+              "query": {
+                "delimiter": "&",
+                "items": []
+              },
+              "scheme": {
+                "name": "http",
+                "version": "V11"
+              },
+              "host": "localhost:8101",
+              "path": ""
+            },
+            "id": "c7b6628b-37a0-4125-9d85-f02dc02d9745",
+            "name": "currency-conversion - HAL Explorer - 8101",
+            "headers": [
+              {
+                "name": "Accept",
+                "value": "application/atom+xml"
+              },
+              {
+                "name": "X-API-Version",
+                "value": ""
+              },
+              {
+                "name": "Authorization",
+                "value": "Basic bGF3cmVuY2U6UEBzc3cwcmQ="
+              }
+            ]
+          }
+        },
+        {
+          "entity": {
+            "type": "Request",
+            "method": {
+              "link": "http://tools.ietf.org/html/rfc7231#section-4.3.1",
+              "name": "GET"
+            },
+            "body": {
+              "formBody": {
+                "overrideContentType": true,
+                "encoding": "application/x-www-form-urlencoded",
+                "items": []
+              },
+              "bodyType": "Text",
+              "textBodyEditorHeight": 150,
+              "textBody": "{\n\"name\": \"AAA\",\n\"birthDate\": \"1992-10-08\"\n}"
+            },
+            "uri": {
+              "query": {
+                "delimiter": "&",
+                "items": []
+              },
+              "scheme": {
+                "name": "http",
+                "version": "V11"
+              },
+              "host": "localhost:8100",
+              "path": "/currency-conversion/from/USD/to/INR/quantity/10"
+            },
+            "id": "d8118975-3d2b-4358-bef9-45e8909474d3",
+            "name": "currency-conversion - USD to INR, quantity=10",
+            "headers": [
+              {
+                "name": "Accept",
+                "value": "application/atom+xml"
+              },
+              {
+                "name": "X-API-Version",
+                "value": ""
+              },
+              {
+                "name": "Authorization",
+                "value": "Basic bGF3cmVuY2U6UEBzc3cwcmQ="
+              }
+            ]
+          }
+        },
+        {
+          "entity": {
+            "type": "Request",
+            "method": {
+              "link": "http://tools.ietf.org/html/rfc7231#section-4.3.1",
+              "name": "GET"
+            },
+            "body": {
+              "formBody": {
+                "overrideContentType": true,
+                "encoding": "application/x-www-form-urlencoded",
+                "items": []
+              },
+              "bodyType": "Text",
+              "textBodyEditorHeight": 150,
+              "textBody": "{\n\"name\": \"AAA\",\n\"birthDate\": \"1992-10-08\"\n}"
+            },
+            "uri": {
+              "query": {
+                "delimiter": "&",
+                "items": []
+              },
+              "scheme": {
+                "name": "http",
+                "version": "V11"
+              },
+              "host": "localhost:8765",
+              "path": "/currency-conversion/from/USD/to/INR/quantity/10"
+            },
+            "id": "f129ffde-6d83-4738-8054-63c974773f24",
+            "name": "currency-conversion - USD to INR, quantity=10 (through api-gateway ApiGatewayConfiguration)",
+            "headers": [
+              {
+                "name": "Accept",
+                "value": "application/atom+xml"
+              },
+              {
+                "name": "X-API-Version",
+                "value": ""
+              },
+              {
+                "name": "Authorization",
+                "value": "Basic bGF3cmVuY2U6UEBzc3cwcmQ="
+              }
+            ]
+          }
+        },
+        {
+          "entity": {
+            "type": "Request",
+            "method": {
+              "link": "http://tools.ietf.org/html/rfc7231#section-4.3.1",
+              "name": "GET"
+            },
+            "body": {
+              "formBody": {
+                "overrideContentType": true,
+                "encoding": "application/x-www-form-urlencoded",
+                "items": []
+              },
+              "bodyType": "Text",
+              "textBodyEditorHeight": 150,
+              "textBody": "{\n\"name\": \"AAA\",\n\"birthDate\": \"1992-10-08\"\n}"
+            },
+            "uri": {
+              "query": {
+                "delimiter": "&",
+                "items": []
+              },
+              "scheme": {
+                "name": "http",
+                "version": "V11"
+              },
+              "host": "localhost:8765",
+              "path": "/currency-conversion/currency-conversion/from/USD/to/INR/quantity/10"
+            },
+            "id": "5f09820a-5a4b-40fb-b185-4442f2fee569",
+            "name": "currency-conversion - USD to INR, quantity=10 (through api-gateway)",
+            "headers": [
+              {
+                "name": "Accept",
+                "value": "application/atom+xml"
+              },
+              {
+                "name": "X-API-Version",
+                "value": ""
+              },
+              {
+                "name": "Authorization",
+                "value": "Basic bGF3cmVuY2U6UEBzc3cwcmQ="
+              }
+            ]
+          }
+        },
+        {
+          "entity": {
+            "type": "Request",
+            "method": {
+              "link": "http://tools.ietf.org/html/rfc7231#section-4.3.1",
+              "name": "GET"
+            },
+            "body": {
+              "formBody": {
+                "overrideContentType": true,
+                "encoding": "application/x-www-form-urlencoded",
+                "items": []
+              },
+              "bodyType": "Text",
+              "textBodyEditorHeight": 150,
+              "textBody": "{\n\"name\": \"AAA\",\n\"birthDate\": \"1992-10-08\"\n}"
+            },
+            "uri": {
+              "query": {
+                "delimiter": "&",
+                "items": []
+              },
+              "scheme": {
+                "name": "http",
+                "version": "V11"
+              },
+              "host": "localhost:8100",
+              "path": "/currency-conversion-02/from/USD/to/INR/quantity/10"
+            },
+            "id": "b519bb8d-b1a9-46c4-bfaf-14c63a473de3",
+            "name": "currency-conversion - USD to INR, quantity=10 (use CurrencyConversion Entity to receive CurrencyExchange return)",
+            "headers": [
+              {
+                "name": "Accept",
+                "value": "application/atom+xml"
+              },
+              {
+                "name": "X-API-Version",
+                "value": ""
+              },
+              {
+                "name": "Authorization",
+                "value": "Basic bGF3cmVuY2U6UEBzc3cwcmQ="
+              }
+            ]
+          }
+        },
+        {
+          "entity": {
+            "type": "Request",
+            "method": {
+              "link": "http://tools.ietf.org/html/rfc7231#section-4.3.1",
+              "name": "GET"
+            },
+            "body": {
+              "formBody": {
+                "overrideContentType": true,
+                "encoding": "application/x-www-form-urlencoded",
+                "items": []
+              },
+              "bodyType": "Text",
+              "textBodyEditorHeight": 150,
+              "textBody": "{\n\"name\": \"AAA\",\n\"birthDate\": \"1992-10-08\"\n}"
+            },
+            "uri": {
+              "query": {
+                "delimiter": "&",
+                "items": []
+              },
+              "scheme": {
+                "name": "http",
+                "version": "V11"
+              },
+              "host": "localhost:8765",
+              "path": "/currency-conversion/currency-conversion-02/from/USD/to/INR/quantity/10"
+            },
+            "id": "cb148df3-6dac-40e3-885e-0d3923d0c75c",
+            "name": "currency-conversion - USD to INR, quantity=10 (use CurrencyConversion Entity to receive CurrencyExchange return) (through api-gateway)",
+            "headers": [
+              {
+                "name": "Accept",
+                "value": "application/atom+xml"
+              },
+              {
+                "name": "X-API-Version",
+                "value": ""
+              },
+              {
+                "name": "Authorization",
+                "value": "Basic bGF3cmVuY2U6UEBzc3cwcmQ="
+              }
+            ]
+          }
+        },
+        {
+          "entity": {
+            "type": "Request",
+            "method": {
+              "link": "http://tools.ietf.org/html/rfc7231#section-4.3.1",
+              "name": "GET"
+            },
+            "body": {
+              "formBody": {
+                "overrideContentType": true,
+                "encoding": "application/x-www-form-urlencoded",
+                "items": []
+              },
+              "bodyType": "Text",
+              "textBodyEditorHeight": 150,
+              "textBody": "{\n\"name\": \"AAA\",\n\"birthDate\": \"1992-10-08\"\n}"
+            },
+            "uri": {
+              "query": {
+                "delimiter": "&",
+                "items": []
+              },
+              "scheme": {
+                "name": "http",
+                "version": "V11"
+              },
+              "host": "localhost:8000",
+              "path": "/"
+            },
+            "id": "6ceaddab-41e0-43cd-95be-01f3d95a198f",
+            "name": "currency-exchange - HAL Explorer - 8000",
+            "headers": [
+              {
+                "name": "Accept",
+                "value": "application/atom+xml"
+              },
+              {
+                "name": "X-API-Version",
+                "value": ""
+              },
+              {
+                "name": "Authorization",
+                "value": "Basic bGF3cmVuY2U6UEBzc3cwcmQ="
+              }
+            ]
+          }
+        },
+        {
+          "entity": {
+            "type": "Request",
+            "method": {
+              "link": "http://tools.ietf.org/html/rfc7231#section-4.3.1",
+              "name": "GET"
+            },
+            "body": {
+              "formBody": {
+                "overrideContentType": true,
+                "encoding": "application/x-www-form-urlencoded",
+                "items": []
+              },
+              "bodyType": "Text",
+              "textBodyEditorHeight": 150,
+              "textBody": "{\n\"name\": \"AAA\",\n\"birthDate\": \"1992-10-08\"\n}"
+            },
+            "uri": {
+              "query": {
+                "delimiter": "&",
+                "items": []
+              },
+              "scheme": {
+                "name": "http",
+                "version": "V11"
+              },
+              "host": "localhost:8001",
+              "path": "/"
+            },
+            "id": "33d111f7-5a50-439c-8311-ca24e1cd9895",
+            "name": "currency-exchange - HAL Explorer - 8001",
+            "headers": [
+              {
+                "name": "Accept",
+                "value": "application/atom+xml"
+              },
+              {
+                "name": "X-API-Version",
+                "value": ""
+              },
+              {
+                "name": "Authorization",
+                "value": "Basic bGF3cmVuY2U6UEBzc3cwcmQ="
+              }
+            ]
+          }
+        },
+        {
+          "entity": {
+            "type": "Request",
+            "method": {
+              "link": "http://tools.ietf.org/html/rfc7231#section-4.3.1",
+              "name": "GET"
+            },
+            "body": {
+              "formBody": {
+                "overrideContentType": true,
+                "encoding": "application/x-www-form-urlencoded",
+                "items": []
+              },
+              "bodyType": "Text",
+              "textBodyEditorHeight": 150,
+              "textBody": "{\n\"name\": \"AAA\",\n\"birthDate\": \"1992-10-08\"\n}"
+            },
+            "uri": {
+              "query": {
+                "delimiter": "&",
+                "items": []
+              },
+              "scheme": {
+                "name": "http",
+                "version": "V11"
+              },
+              "host": "localhost:8000",
+              "path": "/currency-exchange/from/USD/to/INR"
+            },
+            "id": "eae4a2e9-6c7c-4857-8d8f-2ed9d1c268c3",
+            "name": "currency-exchange - USD to INR",
+            "headers": [
+              {
+                "name": "Accept",
+                "value": "application/atom+xml"
+              },
+              {
+                "name": "X-API-Version",
+                "value": ""
+              },
+              {
+                "name": "Authorization",
+                "value": "Basic bGF3cmVuY2U6UEBzc3cwcmQ="
+              }
+            ]
+          }
+        },
+        {
+          "entity": {
+            "type": "Request",
+            "method": {
+              "link": "http://tools.ietf.org/html/rfc7231#section-4.3.1",
+              "name": "GET"
+            },
+            "body": {
+              "formBody": {
+                "overrideContentType": true,
+                "encoding": "application/x-www-form-urlencoded",
+                "items": []
+              },
+              "bodyType": "Text",
+              "textBodyEditorHeight": 150,
+              "textBody": "{\n\"name\": \"AAA\",\n\"birthDate\": \"1992-10-08\"\n}"
+            },
+            "uri": {
+              "query": {
+                "delimiter": "&",
+                "items": []
+              },
+              "scheme": {
+                "name": "http",
+                "version": "V11"
+              },
+              "host": "localhost:8765",
+              "path": "/currency-exchange/from/USD/to/INR"
+            },
+            "id": "8e15621c-cec3-41f8-9e9c-1c1a039d9f33",
+            "name": "currency-exchange - USD to INR (through api-gateway ApiGatewayConfiguration class)",
+            "headers": [
+              {
+                "name": "Accept",
+                "value": "application/atom+xml"
+              },
+              {
+                "name": "X-API-Version",
+                "value": ""
+              },
+              {
+                "name": "Authorization",
+                "value": "Basic bGF3cmVuY2U6UEBzc3cwcmQ="
+              }
+            ]
+          }
+        },
+        {
+          "entity": {
+            "type": "Request",
+            "method": {
+              "link": "http://tools.ietf.org/html/rfc7231#section-4.3.1",
+              "name": "GET"
+            },
+            "body": {
+              "formBody": {
+                "overrideContentType": true,
+                "encoding": "application/x-www-form-urlencoded",
+                "items": []
+              },
+              "bodyType": "Text",
+              "textBodyEditorHeight": 150,
+              "textBody": "{\n\"name\": \"AAA\",\n\"birthDate\": \"1992-10-08\"\n}"
+            },
+            "uri": {
+              "query": {
+                "delimiter": "&",
+                "items": []
+              },
+              "scheme": {
+                "name": "http",
+                "version": "V11"
+              },
+              "host": "localhost:8765",
+              "path": "/currency-exchange/currency-exchange/from/USD/to/INR"
+            },
+            "id": "1f164857-a4b3-4f14-900f-73968f633ab4",
+            "name": "currency-exchange - USD to INR (through api-gateway)",
+            "headers": [
+              {
+                "name": "Accept",
+                "value": "application/atom+xml"
+              },
+              {
+                "name": "X-API-Version",
+                "value": ""
+              },
+              {
+                "name": "Authorization",
+                "value": "Basic bGF3cmVuY2U6UEBzc3cwcmQ="
+              }
+            ]
+          }
+        },
+        {
+          "entity": {
+            "type": "Request",
+            "method": {
+              "link": "http://tools.ietf.org/html/rfc7231#section-4.3.1",
+              "name": "GET"
+            },
+            "body": {
+              "formBody": {
+                "overrideContentType": true,
+                "encoding": "application/x-www-form-urlencoded",
+                "items": []
+              },
+              "bodyType": "Text",
+              "textBodyEditorHeight": 150,
+              "textBody": "{\n\"name\": \"AAA\",\n\"birthDate\": \"1992-10-08\"\n}"
+            },
+            "uri": {
+              "query": {
+                "delimiter": "&",
+                "items": []
+              },
+              "scheme": {
+                "name": "http",
+                "version": "V11"
+              },
+              "host": "localhost:8000",
+              "path": "/sample-api"
+            },
+            "id": "f83d326a-22b3-488b-829c-300996e1cdba",
+            "name": "currency-exchange - sample-api",
+            "headers": [
+              {
+                "name": "Accept",
+                "value": "application/atom+xml"
+              },
+              {
+                "name": "X-API-Version",
+                "value": ""
+              },
+              {
+                "name": "Authorization",
+                "value": "Basic bGF3cmVuY2U6UEBzc3cwcmQ="
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}
