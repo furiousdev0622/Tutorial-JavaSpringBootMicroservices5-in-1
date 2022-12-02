@@ -11,3 +11,15 @@ If you are using Docker-for-Linux 20.10.0+, you can also use the host host.docke
 sudo docker run --add-host host.docker.internal:host-gateway in28min/todo-rest-api-h2:1.0.0.RELEASE
 2.4) - tested workable
 sudo docker run --network="host" in28min/todo-rest-api-h2:1.0.0.RELEASE
+2.5) - tested workable
+sudo docker run -p 5000:5000 in28min/todo-rest-api-h2:1.0.0.RELEASE
+
+3)
+Run in detached mode:
+sudo docker run -p 5000:5000 -d in28min/todo-rest-api-h2:1.0.0.RELEASE
+
+will got the ID of the container, such as: ef5c4702aee9f957542592025b904c82a6a2248d0ae7ef461bf3212a9c0a0f18
+
+4)Example to view the log:
+sudo docker logs ef5c4702aee9f957542592025b904c82a6a2248d0ae7ef461bf3212a9c0a0f18
+
