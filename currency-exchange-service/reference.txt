@@ -1,5 +1,5 @@
 1)
-watch -n 0.1 curl "http://google.com"
+> watch -n 0.1 curl "http://google.com"
 
 2)
 Reference only:
@@ -8,18 +8,58 @@ If you are using Docker-for-mac or Docker-for-Windows 18.03+, just connect to yo
 2.2)
 If you are using Docker-for-Linux 20.10.0+, you can also use the host host.docker.internal if you started your Docker container with the --add-host host.docker.internal:host-gateway option.
 2.3) - seem not work
-sudo docker run --add-host host.docker.internal:host-gateway in28min/todo-rest-api-h2:1.0.0.RELEASE
+> sudo docker run --add-host host.docker.internal:host-gateway in28min/todo-rest-api-h2:1.0.0.RELEASE
 2.4) - tested workable
-sudo docker run --network="host" in28min/todo-rest-api-h2:1.0.0.RELEASE
+> sudo docker run --network="host" in28min/todo-rest-api-h2:1.0.0.RELEASE
 2.5) - tested workable
-sudo docker run -p 5000:5000 in28min/todo-rest-api-h2:1.0.0.RELEASE
+> sudo docker run -p 5000:5000 in28min/todo-rest-api-h2:1.0.0.RELEASE
 
 3)
 Run in detached mode:
-sudo docker run -p 5000:5000 -d in28min/todo-rest-api-h2:1.0.0.RELEASE
+> sudo docker run -p 5000:5000 -d in28min/todo-rest-api-h2:1.0.0.RELEASE
+> sudo docker run -p 5001:5000 -d in28min/todo-rest-api-h2:1.0.0.RELEASE
 
 will got the ID of the container, such as: ef5c4702aee9f957542592025b904c82a6a2248d0ae7ef461bf3212a9c0a0f18
 
-4)Example to view the log:
-sudo docker logs ef5c4702aee9f957542592025b904c82a6a2248d0ae7ef461bf3212a9c0a0f18
+4)Example command to view the log:
+> sudo docker logs ef5c4702aee9f957542592025b904c82a6a2248d0ae7ef461bf3212a9c0a0f18
+
+5)Example command to view the log and tail:
+> sudo docker logs -f ef5c4702aee9f957542592025b904c82a6a2248d0ae7ef461bf3212a9c0a0f18
+
+6) Command for listing out all the existing containers:
+> sudo docker container ls
+
+7) Example command to stop a container:
+> sudo docker container stop ef5c47
+
+8) Creat new tag for a particular image; so that image have one more new tag:
+> sudo docker tag in28min/todo-rest-api-h2:1.0.0.RELEASE in28min/todo-rest-api-h2:latest
+OR
+> sudo docker tag c2c2eba5ae85 mysql/202210 
+(where c2c2eba5ae85 is the image ID)
+
+9) If pull a docker image without specifying a version; then docker will pull down the tagged "latest" version.
+> sudo docker pull mysql
+
+10) Search the existing images contain specific keyword on docker hub, for example "mysql", if there exists:
+> sudo docker search mysq
+(the item with "[OK]" is docker official images)
+another example:
+> sudo docker search "solace server"
+
+11) To list of update history of the image:
+> sudo docker image history 9d05dd98f4a4
+(where 9d05dd98f4a4 is the image ID)
+
+12) To list out the metadata of specific image (in JSON format)
+> sudo docker image imspect 9d05dd98f4a4 
+
+13) To remove a docke image:
+> sudo docker image remove a3a2968869cf
+(where a3a2968869cf is the image ID)
+
+
+
+
 
