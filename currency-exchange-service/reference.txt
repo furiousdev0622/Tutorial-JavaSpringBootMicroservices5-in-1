@@ -59,7 +59,36 @@ another example:
 > sudo docker image remove a3a2968869cf
 (where a3a2968869cf is the image ID)
 
+14) Launch image with docker container example:
+> sudo docker container run -p 5001:5000 -d in28min/todo-rest-api-h2:1.0.0.RELEASE
 
+15) To pause a container:
+> sudo docker container pause 72693
+(where 72693 is part of the container ID: 72693e3c9c80bdfdef4fb16371669c2a7fda1298bb48b2c58c498b35000f422e)
 
+16) To follow the logs of this container:
+> sudo docker logs -f 72693e3c9
+OR
+> sudo docker container logs -f 72693e3c9
+(where 72693e3c9 is part of the container ID: 72693e3c9c80bdfdef4fb16371669c2a7fda1298bb48b2c58c498b35000f422e)
+
+17) To pause a container:
+> sudo docker container unpause 72693
+(where 72693 is part of the container ID: 72693e3c9c80bdfdef4fb16371669c2a7fda1298bb48b2c58c498b35000f422e)
+
+18) To inspect a container:
+> sudo docker container inspect 72693
+
+19) List out the container id, image, command, created, status of all images and corresponding container: 
+> sudo docker container ls -a
+
+20) To remove all stopper containers: 
+> sudo docker container prune
+
+21) To stop a container (graceful shutdown):
+> sudo docker container stop 72693e
+
+23) To stop a container (sigkill) (kill immediately):
+> sudo docker container kill f26a8
 
 
