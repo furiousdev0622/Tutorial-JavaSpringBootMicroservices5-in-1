@@ -91,4 +91,12 @@ OR
 23) To stop a container (sigkill) (kill immediately):
 > sudo docker container kill f26a8
 
+24) Auto restart container once docker launched/restarted:
+> sudo docker run -p 5000:5000 -d --restart=always in28min/todo-rest-api-h2:0.0.1-SNAPSHOT 
+(Defualt value of --restart is no (--restart=no))
+
+25) To restart a docker:
+>sudo docker restart -t 10
+(where "-t 10" is seconds to wait for stop before killing the container)
+
 
