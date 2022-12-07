@@ -99,5 +99,26 @@ OR
 >sudo docker restart -t 10
 (where "-t 10" is seconds to wait for stop before killing the container)
 
+26) To view the current docker activity by printing the logs:  
+> sudo docker events
+
+27) To view which process(es) is/are running within the container:
+> sudo docker top 50bf4
+(where 50bf4 is part of the container ID: 50bf40f732e7)
+
+28) Showing the statistic of the current running container(s)
+> sudo docker stats
+
+29) To launch contain with limited memory and CPU usage limit:
+> sudo docker run -p 5001:5000 -m 512m --cpu-quota 5000 -d --restart=always in28min/todo-rest-api-h2:0.0.1-SNAPSHOT
+(
+i) -m 512m <-- limit this container can only use 512m ram in max.
+
+ii) --cpu-quota 5000 <-- limit this container can only use 5% of CPU processing in max.
+(where 100000 = 100% and 5000 = 5%)
+)
+
+30) To list out the different things that your docker daemon manages:
+> sudo docker system df
 
 
