@@ -122,3 +122,20 @@ ii) --cpu-quota 5000 <-- limit this container can only use 5% of CPU processing 
 > sudo docker system df
 
 
+31) Download zipkin:
+> curl -sSL https://zipkin.io/quickstart.sh | bash -s
+
+32) Run zipkin locally:
+> java -jar zipkin.jar
+
+33) Start Zipkin via Docker: 
+> sudo docker run -p 9411:9411 openzipkin/zipkin
+
+
+
+
+
+
+
+
+
