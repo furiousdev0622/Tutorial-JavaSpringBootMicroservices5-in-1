@@ -6,6 +6,10 @@ spring:
       server:
         git:
           uri: file:///home/lawrence/Workspace/Eclipse/java/tutorial/udemy/Master_Microservices_with_Spring_Boot_and_Spring_Cloud/repo/git-localconfig-repo
+  sleuth:
+    sampler:
+      probability: 1.0 #where 0.05=5%, 1.0=100% (% of request being trace)   
+
 server:
   port: 8888
   

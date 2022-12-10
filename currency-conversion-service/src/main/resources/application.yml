@@ -2,7 +2,10 @@ spring:
   application:
     name: currency-conversion
   config:
-    import: optional:configserver:http://localhost:8888        
+    import: optional:configserver:http://localhost:8888   
+  sleuth:
+    sampler:
+      probability: 1.0 #where 0.05=5%, 1.0=100% (% of request being trace)         
 
 server:
   port: 8100

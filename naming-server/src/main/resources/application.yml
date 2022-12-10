@@ -1,6 +1,9 @@
 spring:
   application:
     name: naming-server
+  sleuth:
+    sampler:
+      probability: 0.05 #where 0.05=5%, 1.0=100% (% of request being trace)
 
 server:
   port: 8761

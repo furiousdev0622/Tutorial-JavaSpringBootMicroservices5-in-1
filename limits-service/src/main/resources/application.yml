@@ -9,6 +9,9 @@ spring:
   cloud:
     config:
       profile: qa
+  sleuth:
+    sampler:
+      probability: 1.0 #where 0.05=5%, 1.0=100% (% of request being trace)         
     
 server:
   port: 7800   
