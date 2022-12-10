@@ -131,11 +131,19 @@ ii) --cpu-quota 5000 <-- limit this container can only use 5% of CPU processing 
 33) Start Zipkin via Docker: 
 > sudo docker run -p 9411:9411 openzipkin/zipkin
 
+34) Build as docker image:
+Eclipse -> Run as -> Maven build... -> "Goals:" "spring-boot:build-image -DskipTests" 
+or "spring-boot:build-image"
+34.1) Prerequisite:
+a) To make docker need not using sudo command to control anymore:
+> sudo chmod o+w /var/run/docker.sock 
 
+35) Compose is a tool for defining and running multi-container Docker applications. 
+With Compose, you use a YAML file to configure your application's services.
+> sudo docker-compose version
 
-
-
-
-
-
+36) To prepare and run container with multi-images through docker compose:
+36.1) Prepare your "docker-compose.yaml" configuration file.
+36.2) Browse to the folder with that docker-compose.yaml" configuration file.
+36.3) > sudo docker-compose up
 
