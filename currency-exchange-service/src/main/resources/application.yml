@@ -42,7 +42,7 @@ resilience4j:
   ratelimiter:
     instances:
       default:
-        limitForPeriod: 2
+        limitForPeriod: 10
         limitRefreshPEriod: 1s
   bulkhead:
     instamces:
