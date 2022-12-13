@@ -32,9 +32,11 @@ services:
     depends_on:
       - naming-server
       - currency-exchange
+      - spring-cloud-config-server
     environment: 
       EUREKA.CLIENT.SERVICEURL.DEFAULTZONE: http://naming-server:8761/eureka
       SPRING.ZIPKIN.BASEURL: http://zipkin-server:9411/
+      SPRING.CONFIG.IMPORT: optional:configserver:http://spring-cloud-config-server:8888
       
 
   currency-exchange: 
@@ -46,9 +48,39 @@ services:
       - currency-network
     depends_on:
       - naming-server
+      - spring-cloud-config-server
     environment: 
       EUREKA.CLIENT.SERVICEURL.DEFAULTZONE: http://naming-server:8761/eureka
       SPRING.ZIPKIN.BASEURL: http://zipkin-server:9411/
+      SPRING.CONFIG.IMPORT: optional:configserver:http://spring-cloud-config-server:8888
+      
+  limits-service: 
+    image: in28min/mmv2-limits-service:0.0.1-SNAPSHOT
+    mem_limit: 700m
+    ports: 
+      - "7800:7800"
+    networks:
+      - currency-network
+    depends_on:
+      - naming-server
+      - spring-cloud-config-server
+    environment: 
+      EUREKA.CLIENT.SERVICEURL.DEFAULTZONE: http://naming-server:8761/eureka
+      SPRING.ZIPKIN.BASEURL: http://zipkin-server:9411/
+      SPRING.CONFIG.IMPORT: optional:configserver:http://spring-cloud-config-server:8888    
+      
+  spring-cloud-config-server: 
+    image: in28min/mmv2-spring-cloud-config-server:0.0.1-SNAPSHOT
+    mem_limit: 700m
+    ports: 
+      - "8888:8888"
+    networks:
+      - currency-network
+    depends_on:
+      - naming-server
+    environment: 
+      EUREKA.CLIENT.SERVICEURL.DEFAULTZONE: http://naming-server:8761/eureka
+      SPRING.ZIPKIN.BASEURL: http://zipkin-server:9411/      
       
   naming-server: 
     image: in28min/mmv2-naming-server:0.0.1-SNAPSHOT
@@ -56,7 +88,7 @@ services:
     ports: 
       - "8761:8761"
     networks:
-      - currency-network      
+      - currency-network    
 
 networks:
   currency-network:
