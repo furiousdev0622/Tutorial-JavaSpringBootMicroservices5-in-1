@@ -8,19 +8,19 @@ services:
       - "9411:9411"
     networks:
       - currency-network
-#    depends_on:  
-#      - rabbitmq
-#    environment:
-#      RABBIT_URI: amqp://guest:guest@rabbitmq:5672
+    depends_on:  
+      - rabbitmq
+    environment:
+      RABBIT_URI: amqp://guest:guest@rabbitmq:5672
       
-#  rabbitmq: 
-#    image: rabbitmq:3.11.4-management
-#    mem_limit: 300m
-#    ports: 
-#      - "5672:5672"
-#      - "15672:15672"
-#    networks:
-#      - currency-network
+  rabbitmq: 
+    image: rabbitmq:3.11.4-management
+    mem_limit: 300m
+    ports: 
+      - "5672:5672"
+      - "15672:15672"
+    networks:
+      - currency-network
             
   api-gateway: 
     image: in28min/mmv2-api-gateway:0.0.1-SNAPSHOT
@@ -31,13 +31,13 @@ services:
       - currency-network
     depends_on:
       - naming-server
-#      - rabbitmq
+      - rabbitmq
     environment: 
       EUREKA.CLIENT.SERVICEURL.DEFAULTZONE: http://naming-server:8761/eureka  
       SPRING.ZIPKIN.BASEURL: http://zipkin-server:9411/    
-#      RABBIT_URI: amqp://guest:guest@rabbitmq:5672
-#      SPRING_RABBITMQ_HOST: rabbitmq
-#      SPRING_ZIPKIN_SENDER_TYPE: rabbit  
+      RABBIT_URI: amqp://guest:guest@rabbitmq:5672
+      SPRING_RABBITMQ_HOST: rabbitmq
+      SPRING_ZIPKIN_SENDER_TYPE: rabbit  
       
   currency-converison: 
     image: in28min/mmv2-currency-conversion-service:0.0.1-SNAPSHOT
@@ -50,14 +50,14 @@ services:
       - naming-server
       - currency-exchange
 #      - spring-cloud-config-server
-#      - rabbitmq
+      - rabbitmq
     environment: 
       EUREKA.CLIENT.SERVICEURL.DEFAULTZONE: http://naming-server:8761/eureka
       SPRING.ZIPKIN.BASEURL: http://zipkin-server:9411/
 #      SPRING.CONFIG.IMPORT: optional:configserver:http://spring-cloud-config-server:8888
-#      RABBIT_URI: amqp://guest:guest@rabbitmq:5672
-#      SPRING_RABBITMQ_HOST: rabbitmq
-#      SPRING_ZIPKIN_SENDER_TYPE: rabbit        
+      RABBIT_URI: amqp://guest:guest@rabbitmq:5672
+      SPRING_RABBITMQ_HOST: rabbitmq
+      SPRING_ZIPKIN_SENDER_TYPE: rabbit        
 
   currency-exchange: 
     image: in28min/mmv2-currency-exchange-service:0.0.1-SNAPSHOT
@@ -74,9 +74,9 @@ services:
       EUREKA.CLIENT.SERVICEURL.DEFAULTZONE: http://naming-server:8761/eureka
       SPRING.ZIPKIN.BASEURL: http://zipkin-server:9411/
 #      SPRING.CONFIG.IMPORT: optional:configserver:http://spring-cloud-config-server:8888
-#      RABBIT_URI: amqp://guest:guest@rabbitmq:5672
-#      SPRING_RABBITMQ_HOST: rabbitmq
-#      SPRING_ZIPKIN_SENDER_TYPE: rabbit
+      RABBIT_URI: amqp://guest:guest@rabbitmq:5672
+      SPRING_RABBITMQ_HOST: rabbitmq
+      SPRING_ZIPKIN_SENDER_TYPE: rabbit
       
 #  limits-service: 
 #    image: in28min/mmv2-limits-service:0.0.1-SNAPSHOT
