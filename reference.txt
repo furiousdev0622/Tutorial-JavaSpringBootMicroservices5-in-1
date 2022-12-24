@@ -147,3 +147,34 @@ With Compose, you use a YAML file to configure your application's services.
 36.2) Browse to the folder with that docker-compose.yaml" configuration file.
 36.3) > sudo docker-compose up
 
+37) AWS EKS tutorial
+https://www.youtube.com/watch?v=SsUnPWp5ilc
+
+38) Setup kubectl 
+https://kubernetes.io/docs/tasks/tools/install-kubectl-linux/
+
+39) Google Kubernetes Service, example:
+> gcloud container clusters get-credentials in28minutes-cluster --region europe-west2 --project teak-formula-371715
+(This command would be generated at "Kubernetes Engine"."Cluster"."Connect", no need to remember this Google command) 
+
+39.1) Check kubectl version
+> kubectl version
+
+39.2) deploy image, example
+> kubectl create deployment hello-world-rest-api --image=in28min/hello-world-rest-api:0.0.1.RELEASE
+
+39.3) Expose deployment to the outside world to make it able to be access outside Google Gloud at port 8080
+> kubectl expose deployment hello-world-rest-api --type=LoadBalancer --port=8080
+
+39.4) show the current events:
+> kubectl get events
+39.4.1) in case if showin "No resources found in default namespace." response, then try: 
+>> kubectl get events -w
+39.4.2) in case if showin "No resources found in default namespace." response, then try: 
+>> kubectl get events -n kube-system
+
+40) Get the information of Pods
+kubectl get pods
+
+
+
