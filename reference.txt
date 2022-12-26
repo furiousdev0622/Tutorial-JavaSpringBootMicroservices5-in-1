@@ -174,7 +174,21 @@ https://kubernetes.io/docs/tasks/tools/install-kubectl-linux/
 >> kubectl get events -n kube-system
 
 40) Get the information of Pods
-kubectl get pods
+>> kubectl get pod
+>> kubectl get pods
+
+41) Get the information of replica set:
+>> kubectl get replicaset
+>> kubectl get replicasets
+
+42) Get the information of deployment:
+kubectl get deployment
+
+43) Get the information of service:
+kubectl get service
+kubectl get services
+
+
 
 
 
