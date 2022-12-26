@@ -176,6 +176,10 @@ https://kubernetes.io/docs/tasks/tools/install-kubectl-linux/
 40) Get the information of Pods
 >> kubectl get pod
 >> kubectl get pods
+40.1) get more information of Pod:
+>> kubectl get pods -o wide
+40.2) get ex[plaon Pods (more details):
+>> kubectl explain pods <fields> <Option>
 
 41) Get the information of replica set:
 >> kubectl get replicaset
@@ -188,7 +192,7 @@ kubectl get deployment
 kubectl get service
 kubectl get services
 
-
-
+44) Descript the details of specific pod
+kubectl describe pod hello-world-rest-api-bdb569b5-9gdnb
 
 
