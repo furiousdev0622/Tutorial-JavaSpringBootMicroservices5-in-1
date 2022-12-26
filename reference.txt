@@ -172,6 +172,8 @@ https://kubernetes.io/docs/tasks/tools/install-kubectl-linux/
 >> kubectl get events -w
 39.4.2) in case if showin "No resources found in default namespace." response, then try: 
 >> kubectl get events -n kube-system
+39.4.3) Get sorted events example:
+kubectl get events --sort-by=.metadata.creationTimestamp
 
 40) Get the information of Pods
 >> kubectl get pod
@@ -184,6 +186,8 @@ https://kubernetes.io/docs/tasks/tools/install-kubectl-linux/
 41) Get the information of replica set:
 >> kubectl get replicaset
 >> kubectl get replicasets
+>> kubectl get rs
+>> kubectl explain replicaset
 
 42) Get the information of deployment:
 kubectl get deployment
@@ -194,5 +198,11 @@ kubectl get services
 
 44) Descript the details of specific pod
 kubectl describe pod hello-world-rest-api-bdb569b5-9gdnb
+
+45) Delete a pod:
+>> kubectl delete pods hello-world-rest-api-bdb569b5-9gdnb
+
+46) Scale deployment to have 3 replicas:
+>> kubectl scale deployment hello-world-rest-api --replicas=3
 
 
