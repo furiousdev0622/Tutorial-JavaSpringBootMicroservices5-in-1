@@ -208,4 +208,57 @@ kubectl get deployment
 46) Scale deployment to have 3 replicas:
 >> kubectl scale deployment hello-world-rest-api --replicas=3
 
+47) Get component status:
+>> kubectl get componentstatus
+>> kubectl get componentstatus -o wid
+
+48) Setup GCloud SDK on Linux:
+48.1) After share to setup GCloub SDK:
+>> https://cloud.google.com/sdk/docs/install#deb
+48.2) Run the following command to init GCloud
+>> exec -l $SHELL
+>> gcloud init
+48.3) This is the useful reference about how to use GCloud engine:
+>> https://cloud.google.com/sdk/auth_success
+
+49) Check gcloud version:
+>> gcloud --version
+
+50) login gcloud with google account
+>> sudo gcloud auth login
+
+51) Set gcloud project 
+>> cloud config set project [PROJECT_ID]
+(where tje [PROJECT_ID] cam be found in Google Cloud
+
+52) Check kubectl client verion:
+>> kubectl version --client
+52.1) For more detail about the version:
+>> kubectl version --client --output=yaml   
+
+53) A plugin for Kubernetes command-line tool kubectl, 
+which allows you to convert manifests between different API versions. 
+This can be particularly helpful 
+to migrate manifests to a non-deprecated api version with newer Kubernetes release. 
+For more info, 
+visit migrate to non deprecated apisA plugin for Kubernetes command-line tool kubectl, 
+which allows you to convert manifests between different API versions. 
+This can be particularly helpful to migrate manifests 
+to a non-deprecated api version with newer Kubernetes release. 
+For more info, visit migrate to non deprecated apis
+
+53.1) check kubectl convert version:
+>> kubectl convert --help
+
+54) Reference for setup kubectl on your machine:
+https://kubernetes.io/docs/tasks/tools/install-kubectl-linux/
+https://kubernetes.io/docs/tasks/tools/install-kubectl-macos/
+https://kubernetes.io/docs/tasks/tools/install-kubectl-windows/
+
+
+
+
+
+
+
 
