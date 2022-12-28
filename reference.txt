@@ -256,8 +256,19 @@ https://kubernetes.io/docs/tasks/tools/install-kubectl-macos/
 https://kubernetes.io/docs/tasks/tools/install-kubectl-windows/
 
 
+55) Setup gcloud gke-gcloud-auth-plugin
+>> gcloud components install gke-gcloud-auth-plugin
+>> export USE_GKE_GCLOUD_AUTH_PLUGIN=True
 
+56) Get the credentials to connect to your cluster:
+>> gcloud container clusters get-credentials in28minutes-cluster --region europe-west2
+(Ref: gcloud container clusters get-credentials <YOUR_CLUSTER> --region <YOUR_REGION>)
 
+56.1) Command-line access: 
+>> gcloud container clusters get-credentials in28minutes-cluster --region europe-west2 --project teak-formula-371715
+
+56.2) (Windows only) to set the right to trun the ps1 script with PowerShell: 
+>> Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy Unrestricted
 
 
 
